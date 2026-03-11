@@ -101,6 +101,11 @@ opkg remove enigma2-softcams-oscam-all-images
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 
 ***********************************************************
+☆☆☆ Ciefp Settings Panel ☆☆☆
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
+
+***********************************************************
+
 ☆☆☆ restart enigma2 ☆☆☆  
 killall -9 enigma2 
 
