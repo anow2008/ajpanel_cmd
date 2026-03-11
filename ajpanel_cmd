@@ -1,30 +1,30 @@
 ☆☆☆  Command  اوامر الانيجما2  ☆☆☆ 
-@@@ اوامر تحديث الصورة وتحديث الفيد@@@
+☆☆☆ اوامر تحديث الصورة وتحديث الفيد ☆☆☆
 opkg update
 opkg update && opkg upgrade 
 
-***  wget تثبيت هذه الحزمه عندتركيب صورة اوبن بلى او  وبلاك هول ***  
+***  wget for openpli and Blackhole ***  
  
 opkg install wget     
 opkg install curl 
 opkg install libdvbcsa1 
 
-@@@ قنوات ملف @@@
+☆☆☆ channels ☆☆☆
  wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubusercontent.com/anow2008/channels/main/channels.tar.gz && rm -rf /etc/enigma2/userbouquet.* /etc/enigma2/lamedb && tar -xzf /tmp/channels.tar.gz -C /tmp && cp -rf /tmp//etc/enigma2/ /etc/enigma2/ 2>/dev/null || cp -rf /tmp/etc/enigma2/* /etc/enigma2/ && chmod 644 /etc/enigma2/userbouquet.* /etc/enigma2/lamedb && wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 && rm -rf /tmp/channels.tar.gz /tmp/etc /tmp/*/etc 2>/dev/null
 
 **********************************************************
-@@@ openpli IP Audio حزمة المساعدة لتشغيل بلاغين الاديو على صورة اوبن بلى @@@
+☆☆☆ openpli IP Audio for openpli   ☆☆☆
 
 opkg install gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-bad-meta  gstreamer1.0-plugins-ugly libgstplayer-1.0-0
 opkg install --force-depends gstreamer1.0-plugins-bad-meta  
 
 *****************************************************************
 
-@@@@ softcam.key @@@@
+☆☆☆ softcam.key ☆☆☆
 wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow2008/softcam.key/main/softcam.key
 
 ****************************************************************
-@@  astra.conf ملف قراة قنوات الملتى استريم محدث @@
+☆☆☆  astra.conf **abertis** ☆☆☆
 wget -O /etc/astra/scripts/abertis https://github.com/anow2008/astra/blob/main/scripts/abertis -P /etc/astra/ && chmod 755 /etc/astra/scripts/abertis 
 wget https://raw.githubusercontent.com/anow2008/astra/main/etc/sysctl.conf -P /etc
 wget https://raw.githubusercontent.com/anow2008/astra/main/astra.conf -P /etc/astra/ && chmod 755 /etc/astra/astra.conf
@@ -33,61 +33,61 @@ wget https://raw.githubusercontent.com/anow2008/astra/main/astra-sm.lua -P /etc/
 chmod 755 /etc/astra/scripts/abertis
 chmod 766 /etc/astra/scripts/abertis  
 ************************
-****plguns****
+#### plguns ####
 
-@@@ BissPro-Smart @@@ 
+☆☆☆ BissPro-Smart ☆☆☆ 
 wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
-
+☆☆☆ remove ☆☆☆ 
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
 
 ********************************************************
 
-@@@ KeyAdder @@@
+☆☆☆ KeyAdder ☆☆☆
 wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
-@@@@@@@@ أمر حذف البلجن @@@@@@@@
+☆☆☆ remove ☆☆☆
 rm -r /usr/lib/enigma2/python/Plugins/Extensions/KeyAdder
 
 ********************************************************
 
-@@@ E2BissKeyEditor @@@
+☆☆☆ E2BissKeyEditor ☆☆☆
 wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
 ********************************************************
 
-@@@ AISubtitles @@@
+☆☆☆ AISubtitles ☆☆☆
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
 
 ********************************************************
 
-@@@ AJPanel @@@
+☆☆☆ AJPanel ☆☆☆
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 
 ********************************************************
 
-@@@ منقذ اللغه العربيه @@@ (py2 & py3)
+☆☆☆ ArabicSavior ☆☆☆  
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
 
-@@@@ أمر حذف البلجن من التلنت @@@
+☆☆☆ remove ☆☆☆
 rm -r /usr/lib/enigma2/python/Plugins/Extensions/ArabicSavior
 
 ********************************************************
 
-@@@ RaedQuickSignal  @@@ (py2 & py3)
+☆☆☆ RaedQuickSignal  ☆☆☆  
 wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
-@@@ امر الحزف @@@
+☆☆☆ remove ☆☆☆
 rm -r /usr/lib/enigma2/python/Plugins/Extensions/RaedQuickSignal
 
 ********************************************************** 
  
-@@@ FootOnsat @@@
+☆☆☆ FootOnsat ☆☆☆
 wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
 
 ***********************************************************
 
-@@@ CiefpSettings T2mi Abertis @@@
+☆☆☆ CiefpSettings T2mi Abertis ☆☆☆
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertis/main/installer.sh -O - | /bin/sh 
 
 ***********************************************************
-@@@ oscam -oscam_11.726-emu @@@
+☆☆☆ oscam -oscam_11.726-emu ☆☆☆
 
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 Remove:
@@ -95,16 +95,16 @@ opkg remove enigma2-softcams-oscam-all-images
 
 ***********************************************************
 
-@@@ PANELS @@@
+#### PANELS ####
 
-@@@ EmilPanelPro @@@
+☆☆☆ EmilPanelPro ☆☆☆
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 
 ***********************************************************
-@@ restart enigma2 @@  
+☆☆☆ restart enigma2 ☆☆☆  
 killall -9 enigma2 
 
-@@ Init Codes @@
+☆☆☆ Init Codes ☆☆☆
 
 init 0          # Deep Standby
 init 1          # Stops Enigma2 and network
