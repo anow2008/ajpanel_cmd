@@ -2,7 +2,11 @@
 ☆☆☆ اوامر تحديث الصورة وتحديث الفيد ☆☆☆
 opkg update
 opkg update && opkg upgrade 
-
+**********************************************************
+☆☆☆  astra-sm ☆☆☆
+opkg update
+opkg install astra-sm
+**********************************************************
 ***  wget for openpli and Blackhole ***  
  
 opkg install wget     
