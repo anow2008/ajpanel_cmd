@@ -26,10 +26,14 @@ opkg install --force-depends gstreamer1.0-plugins-bad-meta
 *****************************************************************
 ☆☆☆  astra.conf **abertis** ☆☆☆
 wget -O /etc/astra/scripts/abertis https://github.com/anow2008/astra/blob/main/scripts/abertis -P /etc/astra/ && chmod 755 /etc/astra/scripts/abertis 
-wget https://raw.githubusercontent.com/anow2008/astra/main/etc/sysctl.conf -P /etc
-wget https://raw.githubusercontent.com/anow2008/astra/main/astra.conf -P /etc/astra/ && chmod 755 /etc/astra/astra.conf
-wget https://raw.githubusercontent.com/anow2008/astra/main/astra-sm.lua -P /etc/astra/ && chmod 755 /etc/astra/astra-sm.lua
-
+1. أمر تحميل ملف astra.conf
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf
+2. أمر تحميل ملف astra-sm.lua
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua
+3. أمر تحميل ملف astra-sm.conf
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf
+الملفsysctl.conf
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
 chmod 755 /etc/astra/scripts/abertis
 chmod 766 /etc/astra/scripts/abertis  
 *******************************************************
