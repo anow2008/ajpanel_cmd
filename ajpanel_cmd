@@ -25,7 +25,9 @@ opkg install --force-depends gstreamer1.0-plugins-bad-meta
 
 *****************************************************************
 ☆☆☆  astra.conf **abertis** ☆☆☆
-wget -O /etc/astra/scripts/abertis https://github.com/anow2008/astra/blob/main/scripts/abertis -P /etc/astra/ && chmod 755 /etc/astra/scripts/abertis 
+1 تحميل ملف abertis
+wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
+
 1. أمر تحميل ملف astra.conf
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf
 2. أمر تحميل ملف astra-sm.lua
