@@ -98,7 +98,12 @@ wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.s
 rm -r /usr/lib/enigma2/python/Plugins/Extensions/RaedQuickSignal
 
 ********************************************************** 
- 
+
+☆☆☆ IPAudioPro ☆☆☆
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/.../main/installer.sh -O - | /bin/sh
+
+**********************************************************
+
 ☆☆☆ FootOnsat ☆☆☆
 wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
 
