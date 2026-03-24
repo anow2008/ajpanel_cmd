@@ -6,6 +6,23 @@ opkg update && opkg upgrade
 ☆☆☆  astra-sm ☆☆☆
 opkg update
 opkg install astra-sm
+☆☆☆ تحميل الملف فى امر واحد ☆☆☆
+wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
+☆☆☆ openpli  تحميل الملف فى امر واحد صورة  ☆☆☆
+wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
+*****************************************************************
+☆☆☆  astra.conf **abertis** ☆☆☆
+1 تحميل ملف abertis
+wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
+1. أمر تحميل ملف astra.conf
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf
+2. أمر تحميل ملف astra-sm.lua
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua
+3. أمر تحميل ملف astra-sm.conf
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf
+الملفsysctl.conf
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
+  
 **********************************************************
 ***  wget for openpli and Blackhole ***  
  
@@ -23,20 +40,6 @@ wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubuserconten
 opkg install gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-bad-meta  gstreamer1.0-plugins-ugly libgstplayer-1.0-0
 opkg install --force-depends gstreamer1.0-plugins-bad-meta  
 
-*****************************************************************
-☆☆☆  astra.conf **abertis** ☆☆☆
-1 تحميل ملف abertis
-wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
-1. أمر تحميل ملف astra.conf
-wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf
-2. أمر تحميل ملف astra-sm.lua
-wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua
-3. أمر تحميل ملف astra-sm.conf
-wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf
-الملفsysctl.conf
-wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
-chmod 755 /etc/astra/scripts/abertis
-chmod 766 /etc/astra/scripts/abertis  
 *******************************************************
 ☆☆☆ Emu cam ☆☆☆
 ☆☆☆ oscam_11.726-emu ☆☆☆
@@ -106,6 +109,7 @@ wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/ref
 
 ☆☆☆ IPAudioPro ☆☆☆
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/bash
+
 **********************************************************
 
 ☆☆☆ FootOnsat ☆☆☆
