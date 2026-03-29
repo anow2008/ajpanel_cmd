@@ -95,6 +95,10 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpSe
 ★★★ IPAudioPro ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/bash
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ ip2sat ★★★
+wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
+curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 "############ ( IPTV Plugins ) ############"
 ★★★ E2iPlayer ★★★
 wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
@@ -102,6 +106,9 @@ wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/ref
 wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO - | /bin/sh
 ★★★ Estalker ★★★
 wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EStalker/EStalker.sh -O - | /bin/sh
+★★★ xklass ★★★
+curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
+wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
 #### PANELS ####
