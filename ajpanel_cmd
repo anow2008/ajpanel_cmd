@@ -1,8 +1,8 @@
-☆☆☆  Command  اوامر الانيجما2  ☆☆☆ 
-☆☆☆ اوامر تحديث الصورة وتحديث الفيد ☆☆☆
+————★★★|  Command  اوامر الانيجما2  |★★★————
+————★★★| اوامر تحديث الصورة وتحديث الفيد |★★★————
 opkg update
 opkg update && opkg upgrade 
-**********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ☆☆☆  astra-sm ☆☆☆
 opkg update
 opkg install astra-sm
@@ -10,8 +10,8 @@ opkg install astra-sm
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
 ☆☆☆ openpli  تحميل الملف فى امر واحد صورة  ☆☆☆
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
-*****************************************************************
-☆☆☆  astra.conf **abertis** ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+————★★★|   astra.conf **abertis |★★★————
 1 تحميل ملف abertis
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
 1. أمر تحميل ملف astra.conf
@@ -23,99 +23,99 @@ wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/ref
 الملفsysctl.conf
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
   
-**********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ***  wget for openpli and Blackhole ***  
 opkg install wget     
 opkg install curl 
 opkg install libdvbcsa1 
-**********************************************************
-☆☆☆ channels ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ channels ★★★
 wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubusercontent.com/anow2008/channels/main/channels.tar.gz && tar -xzf /tmp/channels.tar.gz -C /tmp && rm -rf /etc/enigma2/userbouquet.* && cp -rf /tmp/etc/enigma2/* /etc/enigma2/ && chmod 644 /etc/enigma2/userbouquet.* /etc/enigma2/lamedb && wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 && rm -rf /tmp/channels.tar.gz /tmp/etc 2>/dev/null
-*********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ☆☆☆ openpli IP Audio for openpli   ☆☆☆
 opkg install gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-bad-meta  gstreamer1.0-plugins-ugly libgstplayer-1.0-0
 opkg install --force-depends gstreamer1.0-plugins-bad-meta  
-*******************************************************
-☆☆☆ Emu cam ☆☆☆
-☆☆☆ oscam_11.726-emu ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Emu cam ★★★
+★★★ oscam_11.726-emu ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 *Remove*
 opkg remove enigma2-softcams-oscam-all-images
-################################################
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ### remove-config-file ### 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
 ### remove-emus-and-config ###
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus-and-config-file.sh | sh
 ### remove-emus ###
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus.sh | sh
-################################################
-☆☆☆ softcam.key ☆☆☆
+
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ softcam.key ★★★
 wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow2008/softcam.key/main/softcam.key
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
-############ ( Plugins ) ############
-
+●●●●●●●●●●●●●● ( Plugins ) ●●●●●●●●●●●●●●
 ############ (  Plugins keys  ) ############
 
-☆☆☆ BissPro-Smart ☆☆☆ 
+★★★ BissPro-Smart ★★★
 wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
 ☆☆☆ remove ☆☆☆ 
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
-********************************************************
-☆☆☆ KeyAdder ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ KeyAdder ★★★
 wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
-********************************************************
-☆☆☆ E2BissKeyEditor ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ E2BissKeyEditor ★★★
 wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
-********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 "############ ( Subtitles Plugins ) ############"
 
-☆☆☆ ArabicSavior ☆☆☆  
+★★★ ArabicSavior ★★★  
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
-********************************************************
-☆☆☆ AISubtitles ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ AISubtitles ★★★
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
-********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
-"############ (  Plugins ) ############"
+●●●●●●●●●●●●●● (  Plugins ) ●●●●●●●●●●●●●●
 
-☆☆☆ AJPanel ☆☆☆
+★★★ AJPanel ★★★
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
-********************************************************
-☆☆☆ RaedQuickSignal  ☆☆☆  
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ RaedQuickSignal  ★★★ 
 wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
-********************************************************** 
-☆☆☆ FootOnsat ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
+★★★ FootOnsat ★★★
 wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
-***********************************************************
-
-"############ ( IPTV Plugins ) ############"
-☆☆☆ E2iPlayer ☆☆☆
-wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
-☆☆☆ X-Streamity ☆☆☆
-wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO - | /bin/sh
-☆☆☆ Estalker ☆☆☆
-wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EStalker/EStalker.sh -O - | /bin/sh
-********************************************************** 
-☆☆☆ IPAudioPro ☆☆☆
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/bash
-**********************************************************
-
-☆☆☆ CiefpSettings T2mi Abertis ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ CiefpSettings T2mi Abertis ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertis/main/installer.sh -O - | /bin/sh 
-***********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ IPAudioPro ★★★
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/bash
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+"############ ( IPTV Plugins ) ############"
+★★★ E2iPlayer ★★★
+wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
+★★★ X-Streamity ★★★
+wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO - | /bin/sh
+★★★ Estalker ★★★
+wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EStalker/EStalker.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
+
 #### PANELS ####
 
-☆☆☆ EmilPanelPro ☆☆☆
+★★★ EmilPanelPro ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 
-***********************************************************
-☆☆☆ Ciefp Settings Panel ☆☆☆
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Ciefp Settings Panel ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
 
-***********************************************************
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
-☆☆☆ restart enigma2 ☆☆☆  
+★★★ restart enigma2 ★★★ 
 killall -9 enigma2 
 
 ☆☆☆ Init Codes ☆☆☆
