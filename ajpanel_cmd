@@ -47,6 +47,7 @@ opkg install --force-depends gstreamer1.0-plugins-bad-meta
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 ★★★ Ncam fairman ★★★
 wget https://dreambox4u.com/emilnabil237/emu/installer-ncam.sh -O - | /bin/sh
+wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ●●●● remove-config-file ●●●● 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
@@ -100,7 +101,9 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAu
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
 curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ OAWeather ★★★
 "OAWeather": "wget https://raw.githubusercontent.com/Ham-ahmed/Plugin/main/oaweather_3.2.1_all.sh -O - | /bin/sh",
+wget -qO- https://github.com/oe-alliance/OAWeather/archive/refs/heads/main.tar.gz | tar -xzv --strip-components=2 -C /usr/lib/enigma2/python/ OAWeather-main/src/ && chmod -R 755 /usr/lib/enigma2/python/Plugins/Extensions/OAWeather /usr/lib/enigma2/python/Components/Converter /usr/lib/enigma2/python/Components/Sources /usr/lib/enigma2/python/Components/Renderer && find /usr/lib/enigma2/python/Plugins/Extensions/OAWeather -name "*.py[oc]" -delete && init 4 && sleep 2 && init 3
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 "############ ( IPTV Plugins ) ############"
 ★★★ E2iPlayer ★★★
@@ -113,7 +116,7 @@ wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EStalker/
 curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
 wget https://dreambox4u.com/emilnabil237/plugins/xklass/installer.sh -O - | /bin/sh
-★★★PlutoTV ★★★ 
+★★★ PlutoTV ★★★ 
 wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/PlutoTV/installer.sh -qO - | /bin/sh
 curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh" | sh
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh" | sh
@@ -126,21 +129,15 @@ wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh" | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
 #### PANELS ####
-
 ★★★ EmilPanelPro ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
-
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ Ciefp Settings Panel ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
-
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-
 ★★★ restart enigma2 ★★★ 
 killall -9 enigma2 
-
-☆☆☆ Init Codes ☆☆☆
-
+★★★ Init Codes ★★★
 init 0          # Deep Standby
 init 1          # Stops Enigma2 and network
 init 3          # Starts Enigma2 normally
