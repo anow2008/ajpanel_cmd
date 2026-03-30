@@ -143,3 +143,5 @@ init 1          # Stops Enigma2 and network
 init 3          # Starts Enigma2 normally
 init 4          # Stops Enigma2
 init 6          # Reboots the box
+★★★ ajpanel_cmd ★★★
+wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/
