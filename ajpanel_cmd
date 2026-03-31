@@ -144,6 +144,9 @@ wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/mai
 ★★★ Ciefp Settings Panel ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ EliesatPanel ★★★
+wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ restart enigma2 ★★★ 
 killall -9 enigma2 
 ★★★ Init Codes ★★★
@@ -153,4 +156,4 @@ init 3          # Starts Enigma2 normally
 init 4          # Stops Enigma2
 init 6          # Reboots the box
 ★★★ ajpanel_cmd ★★★
-wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/
+rm -f /media/hdd/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/
