@@ -84,10 +84,25 @@ wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - 
 wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
-●●●●●●●●●●●●●● (  Plugins ) ●●●●●●●●●●●●●●
+●●●●●●●●●●●●●● (  PANELS ) ●●●●●●●●●●●●●●
 ★★★ AJPanel ★★★
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ EmilPanelPro ★★★
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Ciefp Settings Panel ★★★
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ EliesatPanel ★★★
+wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+"Epanel": "wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh"
+★★★ Epanel ★★★
+wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
+●●●●●●●●●●●●●● (  Plugins ) ●●●●●●●●●●●●●●
 ★★★ ArabicSavior ★★★  
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
@@ -137,20 +152,7 @@ curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh"
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh" | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
-#### PANELS ####
-★★★ EmilPanelPro ★★★
-wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ Ciefp Settings Panel ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ EliesatPanel ★★★
-wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-"Epanel": "wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh"
-★★★ Epanel ★★★
-wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ★★★ restart enigma2 ★★★ 
 killall -9 enigma2 
 ★★★ Init Codes ★★★
