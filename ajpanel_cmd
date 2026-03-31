@@ -152,6 +152,9 @@ curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh"
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh" | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
+★★★ ajpanel_cmd ★★★
+rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/ && cp /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
 ★★★ restart enigma2 ★★★ 
 killall -9 enigma2 
@@ -161,5 +164,4 @@ init 1          # Stops Enigma2 and network
 init 3          # Starts Enigma2 normally
 init 4          # Stops Enigma2
 init 6          # Reboots the box
-★★★ ajpanel_cmd ★★★
-rm -f /media/hdd/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/
+
