@@ -70,20 +70,6 @@ wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/rem
 wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow2008/softcam.key/main/softcam.key
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
-●●●●●●●●●●●●●● ( Plugins ) ●●●●●●●●●●●●●●
-●●●● (  biss keys  ) ●●●●
-★★★ BissPro-Smart ★★★
-wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
-★★★ remove ★★★ 
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ KeyAdder ★★★
-wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ E2BissKeyEditor ★★★
-wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-
 ●●●●●●●●●●●●●● (  PANELS ) ●●●●●●●●●●●●●●
 ★★★ AJPanel ★★★
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
@@ -100,6 +86,9 @@ wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O
 "Epanel": "wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh"
 ★★★ Epanel ★★★
 wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ SmartAddonspanel ★★★
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/SmartAddonspanel/smart-Panel.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ●●●●●●●●●●●●●● (  Plugins ) ●●●●●●●●●●●●●●
@@ -129,6 +118,19 @@ curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | s
 "OAWeather": "wget https://raw.githubusercontent.com/Ham-ahmed/Plugin/main/oaweather_3.2.1_all.sh -O - | /bin/sh",
 wget -qO- https://github.com/oe-alliance/OAWeather/archive/refs/heads/main.tar.gz | tar -xzv --strip-components=2 -C /usr/lib/enigma2/python/ OAWeather-main/src/ && chmod -R 755 /usr/lib/enigma2/python/Plugins/Extensions/OAWeather /usr/lib/enigma2/python/Components/Converter /usr/lib/enigma2/python/Components/Sources /usr/lib/enigma2/python/Components/Renderer && find /usr/lib/enigma2/python/Plugins/Extensions/OAWeather -name "*.py[oc]" -delete && init 4 && sleep 2 && init 3
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+####( biss )####
+★★★ BissPro-Smart ★★★
+wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
+★★★ remove ★★★ 
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ KeyAdder ★★★
+wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ E2BissKeyEditor ★★★
+wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 "############ ( IPTV Plugins ) ############"
 ★★★ E2iPlayer ★★★
 wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
