@@ -50,7 +50,7 @@ opkg install gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-pl
 opkg install --force-depends gstreamer1.0-plugins-bad-meta  
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
   
-★★★Softcams★★★ 
+★★★ Softcams ★★★ 
 ★★★ oscam_11.726-emu ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 ★★★ Ncam fairman ★★★
@@ -77,13 +77,12 @@ wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | 
 ★★★ EmilPanelPro ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ Ciefp Settings Panel ★★★
+★★★ CiefpPanel ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ EliesatPanel ★★★
 wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-"Epanel": "wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh"
 ★★★ Epanel ★★★
 wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
@@ -118,7 +117,8 @@ curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | s
 "OAWeather": "wget https://raw.githubusercontent.com/Ham-ahmed/Plugin/main/oaweather_3.2.1_all.sh -O - | /bin/sh",
 wget -qO- https://github.com/oe-alliance/OAWeather/archive/refs/heads/main.tar.gz | tar -xzv --strip-components=2 -C /usr/lib/enigma2/python/ OAWeather-main/src/ && chmod -R 755 /usr/lib/enigma2/python/Plugins/Extensions/OAWeather /usr/lib/enigma2/python/Components/Converter /usr/lib/enigma2/python/Components/Sources /usr/lib/enigma2/python/Components/Renderer && find /usr/lib/enigma2/python/Plugins/Extensions/OAWeather -name "*.py[oc]" -delete && init 4 && sleep 2 && init 3
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-####( biss )####
+
+"############ ( biss Plugins ) ############"
 ★★★ BissPro-Smart ★★★
 wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
 ★★★ remove ★★★ 
@@ -158,8 +158,6 @@ wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/vavoo/vavoo.sh" | sh
 rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/ && cp /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
-★★★ restart enigma2 ★★★ 
-killall -9 enigma2 
 ★★★ Init Codes ★★★
 init 0          # Deep Standby
 init 1          # Stops Enigma2 and network
