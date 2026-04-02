@@ -15,7 +15,7 @@ wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/as
 ————★★★|   astra.conf **abertis |★★★————
 1 تحميل ملف abertis
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
-———————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 1. أمر تحميل ملف astra.conf
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf
 ———————————————————————————————————————————————————————————————————
@@ -46,10 +46,10 @@ wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubuserconten
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| picons |::★●●————
-    ★★★ eliesat ★★★
+    ★★★ picons eliesat ★★★
 wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
 ———————————————————————————————————————————————————————————————————
-     ★★★ anow ★★★
+     ★★★ picons anow ★★★
 cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz | tar xz --strip-components=2 picon-picon-main/picon
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
@@ -84,6 +84,9 @@ wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow200
 ★★★ AJPanel ★★★
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ SmartAddonspanel ★★★
+wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/SmartAddonspanel/smart-Panel.sh -O - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ EmilPanelPro ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
@@ -95,9 +98,6 @@ wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ Epanel ★★★
 wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ SmartAddonspanel ★★★
-wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/SmartAddonspanel/smart-Panel.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| (  Plugins ) |::★●●————
@@ -124,7 +124,6 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAu
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ ip2sat ★★★
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
-curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ OAWeather ★★★
 "OAWeather": "wget https://raw.githubusercontent.com/Ham-ahmed/Plugin/main/oaweather_3.2.1_all.sh -O - | /bin/sh",
@@ -152,12 +151,10 @@ wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO 
 ★★★ Estalker ★★★
 wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EStalker/EStalker.sh -O - | /bin/sh
 ★★★ xklass ★★★
-curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
 wget https://dreambox4u.com/emilnabil237/plugins/xklass/installer.sh -O - | /bin/sh
 ★★★ PlutoTV ★★★ 
 wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/PlutoTV/installer.sh -qO - | /bin/sh
-curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh" | sh
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh" | sh
 ★★★ HasBahCa ★★★ 
 wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/HasBahCa/installer.sh -qO - | /bin/sh
