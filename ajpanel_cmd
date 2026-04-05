@@ -111,6 +111,9 @@ wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -
 ★★★ AISubtitles ★★★
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ subssupport-1.5.8-r9 ★★★
+wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh" | bash
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ RaedQuickSignal  ★★★ 
 wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
@@ -152,6 +155,8 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/Fu
 ————●●★::| ( IPTV Plugins ) |::★●●————
 ★★★ E2iPlayer ★★★
 wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
+curl -kLs "https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer-oem/e2iplayer.sh" | bash
+wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer-oem/e2iplayer.sh" | bash
 ★★★ X-Streamity ★★★
 wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO - | /bin/sh
 ★★★ Estalker ★★★
