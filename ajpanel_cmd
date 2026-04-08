@@ -156,8 +156,8 @@ wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - 
 ★★★ E2BissKeyEditor ★★★
 wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-★★★ FuryBissPro ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/FuryBissPro/main/fury/installer.sh -O - | /bin/sh
+★★★ FuryBiss ★★★
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/FuryBiss/main/fury/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| ( IPTV Plugins ) |::★●●————
