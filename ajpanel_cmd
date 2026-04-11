@@ -43,6 +43,9 @@ opkg install python3-beautifulsoup4
 
 ————●●★::| satellites.xml ملف ترددات |::★●●————
 wget --no-check-certificate https://raw.githubusercontent.com/oe-alliance/oe-alliance-tuxbox-common/refs/heads/master/src/satellites.xml -O /etc/tuxbox/satellites.xml && cp /etc/tuxbox/satellites.xml /etc/enigma2/satellites.xml && echo "Done! Satellites updated in both locations."
+———————————————————————————————————————————————————————————————————
+————●●★::| satellites.xml  anow ملف ترددات |::★●●————
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/satellites.xml/main/satellites.xml -O /etc/tuxbox/satellites.xml && cp /etc/tuxbox/satellites.xml /etc/enigma2/satellites.xml && echo "Done! Your custom satellites.xml updated."
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| channels |::★●●————
