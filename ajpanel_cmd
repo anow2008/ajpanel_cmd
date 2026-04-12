@@ -153,6 +153,11 @@ wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install
 ★★★ remove ★★★ 
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Feed-Hunter ★★★
+wget -qO- https://raw.githubusercontent.com/anow2008/Feed-Hunter/main/install.sh | sh
+★★★ remove ★★★ 
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FeedHunter && find /usr/lib/enigma2/python/Plugins/Extensions/ -name "pycache" -type d -exec rm -rf {} + && killall -9 enigma2
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ KeyAdder ★★★
 wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
