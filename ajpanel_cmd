@@ -53,7 +53,7 @@ wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubuserconten
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| EPGImport-Sources |::★●●————
-rm -f /etc/epgimport/Nilesat_EPG.sources.xml && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/EPGImport-Sources/main/Nilesat_EPG.sources.xml -P /etc/epgimport/
+wget --no-check-certificate https://raw.githubusercontent.com/anow2008/EPGImport-Sources/main/Nilesat_EPG.sources.xml -O /etc/epgimport/Nilesat_EPG.sources.xml && chmod 644 /etc/epgimport/Nilesat_EPG.sources.xml
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| picons |::★●●————
