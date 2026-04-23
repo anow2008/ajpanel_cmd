@@ -65,6 +65,9 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/eliesatpanelg
 ———————————————————————————————————————————————————————————————————
      ★★★ picons anow ★★★
 cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz | tar xz --strip-components=2 picon-picon-main/picon
+———————————————————————————————————————————————————————————————————
+     ★★★ Delete all picons  ★★★
+MS=""; for path in /media/hdd /media/usb /usr/share/enigma2; do [ -d "$path" ] && MS="$path" && break; done; [ -n "$MS" ] && [ -d "$MS/picon" ] && rm -rf "$MS/picon"/* && echo "DONE: $MS/picon is now empty" || echo "No picon folder found"
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| Softcams |::★●●————
