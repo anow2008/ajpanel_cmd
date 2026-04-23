@@ -60,6 +60,9 @@ wget --no-check-certificate https://raw.githubusercontent.com/anow2008/EPGImport
     ★★★ picons eliesat ★★★
 wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
 ———————————————————————————————————————————————————————————————————
+    ★★★  eliesat picons-motor ★★★
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/eliesatpanelgrid/oe2.0/main/picons/picons-all.sh | bash
+———————————————————————————————————————————————————————————————————
      ★★★ picons anow ★★★
 cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz | tar xz --strip-components=2 picon-picon-main/picon
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
