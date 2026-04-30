@@ -131,8 +131,14 @@ wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -
 ★★★ AISubtitles ★★★
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Mytranslator ★★★
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/mytranslator/mytranslator.sh" -qO - | /bin/sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ subssupport-1.5.8-r9 ★★★
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh" | bash
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Subssupport-mnasr 1.8.0.r8  ★★★
+wget https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ RaedQuickSignal  ★★★ 
 wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
@@ -148,6 +154,9 @@ wget -q --no-check-certificate https://raw.githubusercontent.com/ciefp/CiefpSett
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ IPAudioPro ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/bash
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+★★★ Orangeaudio ★★★
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/orangeaudio/orangeaudio.sh" -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ ip2sat ★★★
 wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
