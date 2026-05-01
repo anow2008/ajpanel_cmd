@@ -2,6 +2,16 @@
 ————★★★| اوامر تحديث الصورة وتحديث الفيد |★★★————
 opkg update
 opkg update && opkg upgrade 
+————●●★::| ( Tools ) |::★●●————
+opkg update
+opkg install wget     
+opkg install curl 
+opkg install libdvbcsa1 
+opkg install gstplayer
+opkg install streamlinksrv
+opkg install python3-lxml
+opkg install python3-requests
+opkg install python3-beautifulsoup4
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::|  astra-sm |::★●●————
 opkg update
@@ -28,17 +38,6 @@ wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/ref
 4. تحميل ملف (etc/sysctl.conf)
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
   
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| ( Tools ) |::★●●————
-opkg update
-opkg install wget     
-opkg install curl 
-opkg install libdvbcsa1 
-opkg install gstplayer
-opkg install streamlinksrv
-opkg install python3-lxml
-opkg install python3-requests
-opkg install python3-beautifulsoup4
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| satellites.xml ملف ترددات |::★●●————
@@ -115,7 +114,7 @@ wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/mai
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ CiefpPanel ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
+wget https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ EliesatPanel ★★★
 wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
@@ -135,7 +134,7 @@ wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-p
 wget "https://gitlab.com/eliesat/extensions/-/raw/main/mytranslator/mytranslator.sh" -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ subssupport-1.5.8-r9 ★★★
-wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh" | bash
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport-1.5.8-r9.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ Subssupport-mnasr 1.8.0.r8  ★★★
 wget https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh -qO - | /bin/sh
@@ -147,19 +146,19 @@ wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.s
 wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ CiefpSettings T2mi Abertis ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertis/main/installer.sh -O - | /bin/sh 
+wget https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertis/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ CiefpSettingsT2miAbertisOpenPLi ★★★
-wget -q --no-check-certificate https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertisOpenPLi/main/installer.sh -O - | /bin/sh
+wget https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertisOpenPLi/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ IPAudioPro ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/bash
+wget https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ Orangeaudio ★★★
 wget "https://gitlab.com/eliesat/extensions/-/raw/main/orangeaudio/orangeaudio.sh" -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ ip2sat ★★★
-wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" | sh
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ OAWeather ★★★
 wget -qO- https://github.com/oe-alliance/OAWeather/archive/refs/heads/main.tar.gz | tar -xzv --strip-components=2 -C /usr/lib/enigma2/python/ OAWeather-main/src/ && chmod -R 755 /usr/lib/enigma2/python/Plugins/Extensions/OAWeather /usr/lib/enigma2/python/Components/Converter /usr/lib/enigma2/python/Components/Sources /usr/lib/enigma2/python/Components/Renderer && find /usr/lib/enigma2/python/Plugins/Extensions/OAWeather -name "*.py[oc]" -delete && init 4 && sleep 2 && init 3
@@ -180,40 +179,40 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FeedHunter && find /usr/lib/en
 wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ E2BissKeyEditor ★★★
-wget -qO- https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh | /bin/sh
+wget https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ FuryBiss ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/FuryBiss/main/fury/installer.sh -O - | /bin/sh
+wget https://raw.githubusercontent.com/islam-2412/FuryBiss/main/fury/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ————●●★::| ( IPTV Plugins ) |::★●●————
 ★★★ E2iPlayer ★★★
-wget --no-check-certificate "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
-wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer-oem/e2iplayer.sh" | bash
+wget "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/e2iplayer-oem/e2iplayer.sh" -O - | /bin/sh
 ★★★ X-Streamity ★★★
 wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO - | /bin/sh
 wget https://raw.githubusercontent.com/eliesatpanelgrid/oe2.0/main/addons/xstreamity/xstreamity.sh -qO - | /bin/sh
 ★★★ Estalker ★★★
 wget https://github.com/emilnabil/download-plugins/raw/refs/heads/main/EStalker/EStalker.sh -O - | /bin/sh
 ★★★ xklass ★★★
-wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" | sh
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/xklass/xklass.sh" -O - | /bin/sh
 wget https://dreambox4u.com/emilnabil237/plugins/xklass/installer.sh -O - | /bin/sh
 ★★★ PlutoTV ★★★ 
 wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/PlutoTV/installer.sh -qO - | /bin/sh
-wget -qO- "https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh" | sh
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/plutotv/plutotv.sh" -O - | /bin/sh
 ★★★ HasBahCa ★★★ 
 wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/HasBahCa/installer.sh -qO - | /bin/sh
-wget -q --no-check-certificate https://raw.githubusercontent.com/Belfagor2005/HasBahCa/main/installer.sh -O - | /bin/sh
-curl -sL "https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh" | sh
+wget https://raw.githubusercontent.com/Belfagor2005/HasBahCa/main/installer.sh -O - | /bin/sh
+wget "https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh" -O - | /bin/sh
 ★★★ Vavoo ★★★
 wget https://raw.githubusercontent.com/eliesatpanelgrid/oe2.0/main/addons/vavoo/vavoo.sh -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 
 ————●●★::| ( Skins ) |::★●●————
 ★★★ Fury-FHD ★★★ 
-wget -q --no-check-certificate https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
+wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
 ★★★ premiumfhd-blue ★★★
-wget -qO- "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh" | sh
+wget "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 
 ★★★ ajpanel_cmd ★★★
