@@ -1,4 +1,9 @@
 ————★★★|  Command  اوامر الانيجما2  |★★★————
+————★★★|  تحميل اعدات للصورة   |★★★————
+OpenATV
+wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/OpenATV/install.sh -O - | /bin/sh
+openpli
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————★★★| اوامر تحديث الصورة وتحديث الفيد |★★★————
 opkg update
 opkg update && opkg upgrade 
