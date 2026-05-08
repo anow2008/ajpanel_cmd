@@ -80,11 +80,11 @@ MS=""; for path in /media/hdd /media/usb /usr/share/enigma2; do [ -d "$path" ] &
  ★★★ 11.726-emu-r802 ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 ———————————————————————————————————————————————————————————————————
- ★★★ 11886-emu-r803 ★★★
-wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/install_oscam11886.sh -O - | /bin/sh
-———————————————————————————————————————————————————————————————————
  ★★★ 11958-emu-r802 ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/install_oscam11958.sh -O - | /bin/sh
+———————————————————————————————————————————————————————————————————
+ ★★★ 11959-emu-r802 ★★★
+wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/install_oscam11959.sh -O - | /bin/sh
 ———————————————————————————————————————————————————————————————————
   ★★★ Ncam fairman ★★★
 wget https://dreambox4u.com/emilnabil237/emu/installer-ncam.sh -O - | /bin/sh
