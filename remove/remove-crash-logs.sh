@@ -1,10 +1,15 @@
 #!/bin/sh
 
-echo "> removing files please wait..."
-sleep 3
+echo "> Removing log files, please wait..."
+sleep 2
 
-for file in /home/root /home/root/logs /media/hdd /media/usb /media/mmc /tmp /; do
-rm -rf $file/*.log > /dev/null 2>&1
-done 
-echo "> done"
-sleep 3
+# تحديد المسارات التي سيتم تنظيفها
+for path in /home/root /home/root/logs /media/hdd /media/usb /media/mmc /tmp; do
+    if [ -d "$path" ]; then
+        echo "> Cleaning: $path"
+        rm -rf "$path"/*.log > /dev/null 2>&1
+    fi
+done
+
+echo "> All done! Your device is clean."
+sleep 2
