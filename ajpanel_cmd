@@ -117,6 +117,8 @@ wget https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertis/main/insta
 wget https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertisOpenPLi/main/installer.sh -O - | /bin/sh
 ★★★ IPAudioPro ★★★
 wget https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/sh
+★★★ myaudio ★★★
+wget -O /etc/enigma2/IPAudioPro.json https://raw.githubusercontent.com/anow2008/sound/refs/heads/main/etc/enigma2/IPAudioPro.json
 ★★★ Orangeaudio ★★★
 wget "https://gitlab.com/eliesat/extensions/-/raw/main/orangeaudio/orangeaudio.sh" -qO - | /bin/sh
 ★★★ ip2sat ★★★
