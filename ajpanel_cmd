@@ -4,13 +4,17 @@ opkg update && opkg upgrade
 opkg update
 opkg install wget     
 opkg install curl
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ( تحميل اعدات للصورة )  
 OpenATV
 wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/OpenATV/install.sh -O - | /bin/sh
 openpli
 wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/openpli/install.sh -O - | /bin/sh
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————●●★::|  astra-sm |::★●●————
 opkg update
 opkg install astra-sm
@@ -18,7 +22,9 @@ opkg install astra-sm
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra.conf -O /etc/astra/astra.conf && chmod 755 /etc/astra/astra.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
 ★★★ openpli  تحميل الملف فى امر واحد صورة  ★★★
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————★★★|   astra.conf **abertis |★★★————
 1 تحميل ملف abertis
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
@@ -30,15 +36,20 @@ wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/ref
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf
 4. تحميل ملف (etc/sysctl.conf)
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————●●★::| satellites.xml ملف ترددات |::★●●————
 wget --no-check-certificate https://raw.githubusercontent.com/oe-alliance/oe-alliance-tuxbox-common/refs/heads/master/src/satellites.xml -O /etc/tuxbox/satellites.xml && cp /etc/tuxbox/satellites.xml /etc/enigma2/satellites.xml && echo "Done! Satellites updated in both locations."
 ————●●★::| satellites.xml  anow ملف ترددات |::★●●————
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/satellites.xml/main/satellites.xml -O /etc/tuxbox/satellites.xml && cp /etc/tuxbox/satellites.xml /etc/enigma2/satellites.xml && echo "Done! Your custom satellites.xml updated."
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| channels |::★●●————
 wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubusercontent.com/anow2008/channels/main/channels.tar.gz && tar -xzf /tmp/channels.tar.gz -C /tmp && rm -rf /etc/enigma2/userbouquet.* && cp -rf /tmp/etc/enigma2/* /etc/enigma2/ && chmod 644 /etc/enigma2/userbouquet.* /etc/enigma2/lamedb && wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 && rm -rf /tmp/channels.tar.gz /tmp/etc 2>/dev/null
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————●●★::| picons |::★●●————
 ★★★ picons eliesat ★★★
 wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
@@ -48,7 +59,9 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/eliesatpanelg
 cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz | tar xz --strip-components=2 picon-picon-main/picon
 ★★★ Delete all picons  ★★★
 MS=""; for path in /media/hdd /media/usb /usr/share/enigma2; do [ -d "$path" ] && MS="$path" && break; done; [ -n "$MS" ] && [ -d "$MS/picon" ] && rm -rf "$MS/picon"/* && echo "DONE: $MS/picon is now empty" || echo "No picon folder found"
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————●●★::| Softcams |::★●●————
 ★★★ oscam ★★★
 ★★★ 11.726-emu-r802 ★★★
@@ -57,6 +70,7 @@ wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh 
 wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - | /bin/sh
 ★★★ config anow ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/conf/main/install/install.sh | sh
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ●●●● remove-config-file ●●●● 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
@@ -64,30 +78,30 @@ wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/rem
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus-and-config-file.sh | sh
 ●●●● remove-emus ●●●●
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus.sh | sh
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| keys |::★●●————
 ★★★ softcam.key ★★★
 wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow2008/softcam.key/main/softcam.key
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————●●★::| (  PANELS ) |::★●●————
 ★★★ AJPanel ★★★
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ SmartAddonspanel ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/SmartAddonspanel/smart-Panel.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ EmilPanelPro ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ CiefpPanel ★★★
 wget https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ EliesatPanel ★★★
 wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ Epanel ★★★
 wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+
 ————●●★::| (  Plugins ) |::★●●————
 ★★★ ArabicSavior ★★★  
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
@@ -112,12 +126,11 @@ wget https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertisOpenPLi/mai
 wget https://raw.githubusercontent.com/zKhadiri/IPAudioPro-Releases-/main/installer.sh -O - | /bin/sh
 ★★★ myaudio ★★★
 wget -O /etc/enigma2/IPAudioPro.json https://raw.githubusercontent.com/anow2008/sound/refs/heads/main/etc/enigma2/IPAudioPro.json
-★★★ Orangeaudio ★★★
-wget "https://gitlab.com/eliesat/extensions/-/raw/main/orangeaudio/orangeaudio.sh" -qO - | /bin/sh
 ★★★ ip2sat ★★★
 wget "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" -O - | /bin/sh
 ★★★ OAWeather ★★★
 wget -qO- https://github.com/oe-alliance/OAWeather/archive/refs/heads/main.tar.gz | tar -xzv --strip-components=2 -C /usr/lib/enigma2/python/ OAWeather-main/src/ && chmod -R 755 /usr/lib/enigma2/python/Plugins/Extensions/OAWeather /usr/lib/enigma2/python/Components/Converter /usr/lib/enigma2/python/Components/Sources /usr/lib/enigma2/python/Components/Renderer && find /usr/lib/enigma2/python/Plugins/Extensions/OAWeather -name "*.py[oc]" -delete && init 4 && sleep 2 && init 3
+
 ————●●★::| ( biss Plugins ) |::★●●————
 ★★★ BissPro-Smart ★★★
 wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
@@ -133,6 +146,7 @@ wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - 
 wget https://raw.githubusercontent.com/ismail9875/E2BissKeyEditor/refs/heads/main/installer.sh -O - | /bin/sh
 ★★★ FuryBiss ★★★
 wget https://raw.githubusercontent.com/islam-2412/FuryBiss/main/fury/installer.sh -O - | /bin/sh
+
 ————●●★::| ( IPTV Plugins ) |::★●●————
 ★★★ E2iPlayer ★★★
 wget "https://github.com/oe-mirrors/e2iplayer/archive/refs/heads/python3.zip" -O /tmp/e2iplayer-python3.zip && unzip /tmp/e2iplayer-python3.zip -d /tmp/ && cp -rf /tmp/e2iplayer-python3/IPTVPlayer /usr/lib/enigma2/python/Plugins/Extensions && rm -f /tmp/e2iplayer-python3.zip && rm -fr /tmp/e2iplayer-master
@@ -155,11 +169,13 @@ wget "https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh" -O 
 ★★★ Vavoo ★★★
 wget https://raw.githubusercontent.com/eliesatpanelgrid/oe2.0/main/addons/vavoo/vavoo.sh -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
+
 ————●●★::| ( Skins ) |::★●●————
 ★★★ Fury-FHD ★★★ 
 wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
 ★★★ premiumfhd-blue ★★★
 wget "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh" -O - | /bin/sh
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ★★★ ajpanel_cmd ★★★
 rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/ && cp /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/
