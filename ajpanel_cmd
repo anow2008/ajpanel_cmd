@@ -5,7 +5,7 @@ opkg update
 opkg install wget     
 opkg install curl
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-( تحميل اعدات للصورة )  
+————●●★::| تحميل اعدات للصورة |::★●●————
 OpenATV
 wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/OpenATV/install.sh -O - | /bin/sh
 openpli
@@ -98,6 +98,8 @@ wget -O /etc/enigma2/IPAudioPro.json https://raw.githubusercontent.com/anow2008/
 wget "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" -O - | /bin/sh
 ★★★ OAWeather ★★★
 wget -qO- https://github.com/oe-alliance/OAWeather/archive/refs/heads/main.tar.gz | tar -xzv --strip-components=2 -C /usr/lib/enigma2/python/ OAWeather-main/src/ && chmod -R 755 /usr/lib/enigma2/python/Plugins/Extensions/OAWeather /usr/lib/enigma2/python/Components/Converter /usr/lib/enigma2/python/Components/Sources /usr/lib/enigma2/python/Components/Renderer && find /usr/lib/enigma2/python/Plugins/Extensions/OAWeather -name "*.py[oc]" -delete && init 4 && sleep 2 && init 3
+★★★ ServerColor  ★★★
+wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/ServerColoring/refs/heads/main/fury/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( biss Plugins ) |::★●●————
 ★★★ BissPro-Smart ★★★
@@ -161,10 +163,7 @@ rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget
 ★★★ remove crash logs  ★★★
 wget "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/remove/remove-crash-logs.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
-★★★ ServerColor  ★★★
-wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/ServerColoring/refs/heads/main/fury/installer.sh -O - | /bin/sh
-●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
-★★★ Init Codes ★★★
+ ★★★ Init Codes ★★★
 init 0          # Deep Standby
 init 1          # Stops Enigma2 and network
 init 3          # Starts Enigma2 normally
