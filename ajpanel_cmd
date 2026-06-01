@@ -58,11 +58,11 @@ wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - |
 ★★★ config anow ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/conf/main/install/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-●●●● remove-config-file ●●●● 
+★★★ remove-config-file ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
-●●●● remove-emus-and-config ●●●●
+★★★ remove-emus-and-config ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus-and-config-file.sh | sh
-●●●● remove-emus ●●●●
+★★★ remove-emus ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| keys |::★●●————
