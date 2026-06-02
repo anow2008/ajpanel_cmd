@@ -1,5 +1,4 @@
 ————●●★::| (  Command  اوامر الانيجما2  ) |::★●●————
-opkg update
 opkg update && opkg upgrade 
 opkg update
 opkg install wget     
