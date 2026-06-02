@@ -1,17 +1,17 @@
-————★★★|  Command  اوامر الانيجما2  |★★★————
+————●●★::| (  Command  اوامر الانيجما2  ) |::★●●————
 opkg update
 opkg update && opkg upgrade 
 opkg update
 opkg install wget     
 opkg install curl
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| تحميل اعدات للصورة |::★●●————
+————●●★::| ( تحميل اعدات للصورة ) |::★●●————
 ★★★ OpenATV ★★★
 wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/OpenATV/install.sh -O - | /bin/sh
 ★★★ openpli ★★★
 wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/openpli/install.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::|  astra-sm |::★●●————
+————●●★::| (  astra-sm ) |::★●●————
 opkg update
 opkg install astra-sm
 ★★★ تحميل الملف فى امر واحد ★★★
@@ -19,7 +19,7 @@ wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/as
 ★★★ openpli  تحميل الملف فى امر واحد صورة  ★★★
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————★★★|   astra.conf **abertis |★★★————
+————●●★::| (   astra.conf **abertis ) |::★●●————
 1 تحميل ملف abertis
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
 1. أمر تحميل ملف astra.conf
@@ -31,16 +31,16 @@ wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/ref
 4. تحميل ملف (etc/sysctl.conf)
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| ملف ترددات |::★●●————
+————●●★::| ( ملف ترددات ) |::★●●————
 ★★★ satellites.xml ملف ترددات ★★★
 wget --no-check-certificate https://raw.githubusercontent.com/oe-alliance/oe-alliance-tuxbox-common/refs/heads/master/src/satellites.xml -O /etc/tuxbox/satellites.xml && cp /etc/tuxbox/satellites.xml /etc/enigma2/satellites.xml && echo "Done! Satellites updated in both locations."
 ★★★ satellites.xml  anow ملف ترددات ★★★
 wget --no-check-certificate https://raw.githubusercontent.com/anow2008/satellites.xml/main/satellites.xml -O /etc/tuxbox/satellites.xml && cp /etc/tuxbox/satellites.xml /etc/enigma2/satellites.xml && echo "Done! Your custom satellites.xml updated."
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| channels |::★●●————
+————●●★::| channels ) |::★●●————
 wget --no-check-certificate -O /tmp/channels.tar.gz https://raw.githubusercontent.com/anow2008/channels/main/channels.tar.gz && tar -xzf /tmp/channels.tar.gz -C /tmp && rm -rf /etc/enigma2/userbouquet.* && cp -rf /tmp/etc/enigma2/* /etc/enigma2/ && chmod 644 /etc/enigma2/userbouquet.* /etc/enigma2/lamedb && wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 && rm -rf /tmp/channels.tar.gz /tmp/etc 2>/dev/null
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| picons |::★●●————
+————●●★::| ( picons ) |::★●●————
 ★★★ picons eliesat ★★★
 wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
 ★★★ eliesat picons-motor ★★★
@@ -50,7 +50,7 @@ cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive
 ★★★ Delete all picons  ★★★
 MS=""; for path in /media/hdd /media/usb /usr/share/enigma2; do [ -d "$path" ] && MS="$path" && break; done; [ -n "$MS" ] && [ -d "$MS/picon" ] && rm -rf "$MS/picon"/* && echo "DONE: $MS/picon is now empty" || echo "No picon folder found"
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| Softcams |::★●●————
+————●●★::| ( Softcams ) |::★●●————
 ★★★ oscam ★★★
 ★★★ 11.726-emu-r802 ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
@@ -59,7 +59,7 @@ wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - |
 ★★★ config anow ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/conf/main/install/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| keys |::★●●————
+————●●★::| ( keys ) |::★●●————
 ★★★ softcam.key ★★★
 wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow2008/softcam.key/main/softcam.key
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
@@ -97,8 +97,6 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/Se
 ————●●★::| ( biss Plugins ) |::★●●————
 ★★★ BissPro-Smart ★★★
 wget -qO - https://raw.githubusercontent.com/anow2008/BissPro-Smart/main/install.sh | sh
-★★★ remove ★★★ 
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
 ★★★ KeyAdder ★★★
 wget https://raw.githubusercontent.com/fairbird/KeyAdder/main/installer.sh -O - | /bin/sh
 ★★★ E2BissKeyEditor ★★★
@@ -150,21 +148,23 @@ wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/inst
 ★★★ premiumfhd-blue ★★★
 wget "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| ajpanel_cmd |::★●●————
+————●●★::| ( ajpanel_cmd ) |::★●●————
 ★★★ ajpanel_cmd ★★★
 rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/ && cp /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
-————●●★::| remove |::★●●————
-★★★ remove crash logs  ★★★
-wget "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/remove/remove-crash-logs.sh" -O - | /bin/sh
+————●●★::| ( remove ) |::★●●————
 ★★★ remove-config-file ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
 ★★★ remove-emus-and-config ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus-and-config-file.sh | sh
 ★★★ remove-emus ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus.sh | sh
+★★★ remove BissPro-Smart ★★★ 
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
+★★★ remove crash logs  ★★★
+wget "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/remove/remove-crash-logs.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
-————●●★::| Init Codes |::★●●————
+————●●★::| ( Init Codes ) |::★●●————
 ★★★ Init Codes ★★★
 init 0          # Deep Standby
 init 1          # Stops Enigma2 and network
