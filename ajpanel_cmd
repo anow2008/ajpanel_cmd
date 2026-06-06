@@ -64,7 +64,7 @@ wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow200
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( free cccam ) |::★●●————
 ★★★ free cccam ★★★
-wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/cccam/main/install.sh | sh
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/cccam/main/install.sh | tr -d '\r' | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| (  Plugins ) |::★●●————
 ★★★ ArabicSavior ★★★  
