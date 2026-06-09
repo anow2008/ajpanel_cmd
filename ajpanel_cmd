@@ -83,6 +83,8 @@ wget https://gitlab.com/eliesat/extensions/-/raw/main/subssupport/subssupport.sh
 wget https://raw.githubusercontent.com/fairbird/RaedQuickSignal/main/installer.sh -O - | /bin/sh
 ★★★ FootOnsat ★★★
 wget https://raw.githubusercontent.com/fairbird/FootOnsat/main/Download/install.sh -O - | /bin/sh
+★★★ simplesport ★★★
+wget -q "--no-check-certificate" https://gitlab.com/hmeng80/extensions/-/raw/main/SimplySports/simplysports.sh -O - | /bin/sh	
 ★★★ CiefpSettings T2mi Abertis ★★★
 wget https://raw.githubusercontent.com/ciefp/CiefpSettingsT2miAbertis/main/installer.sh -O - | /bin/sh
 ★★★ CiefpSettingsT2miAbertisOpenPLi ★★★
