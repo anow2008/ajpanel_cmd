@@ -158,6 +158,10 @@ rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget
 ★★★ Haitham.xml ★★★
 rm -f /media/hdd/Ajpanel_Eliesatpanel/ajpanel_menu_Haitham.xml && wget --no-check-certificate "https://gitlab.com/hmeng80/AjPanel/-/raw/main/ajpanel_menu_Haitham.xml?ref_type=heads" -O /media/hdd/Ajpanel_Eliesatpanel/ajpanel_menu_Haitham.xml
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
+————●●★::| ( clean ) |::★●●————
+★★★ clean ★★★
+wget -qO- "https://raw.githubusercontent.com/anow2008/clean/main/clean.sh" | sh
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 ————●●★::| ( remove ) |::★●●————
 ★★★ remove-config-file ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
