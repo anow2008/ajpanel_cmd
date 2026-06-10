@@ -155,6 +155,8 @@ wget "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blu
 ————●●★::| ( ajpanel_cmd ) |::★●●————
 ★★★ ajpanel_cmd ★★★
 rm -f /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/ajpanel_cmd && wget --no-check-certificate "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/ajpanel_cmd" -P /media/hdd/ && cp /media/hdd/ajpanel_cmd /media/hdd/Ajpanel_Eliesatpanel/
+★★★ Haitham.xml ★★★
+rm -f /media/hdd/Ajpanel_Eliesatpanel/ajpanel_menu_Haitham.xml && wget --no-check-certificate "https://gitlab.com/hmeng80/AjPanel/-/raw/main/ajpanel_menu_Haitham.xml?ref_type=heads" -O /media/hdd/Ajpanel_Eliesatpanel/ajpanel_menu_Haitham.xml
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 ————●●★::| ( remove ) |::★●●————
 ★★★ remove-config-file ★★★ 
