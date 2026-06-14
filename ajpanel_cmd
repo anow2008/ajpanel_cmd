@@ -69,6 +69,8 @@ wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow200
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/cccam/main/install.sh | tr -d '\r' | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| (  Plugins ) |::★●●————
+★★★ epgimport ★★★  
+opkg update && opkg install enigma2-plugin-extensions-epgimport
 ★★★ ArabicSavior ★★★  
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
 ★★★ AISubtitles ★★★
