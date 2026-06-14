@@ -52,9 +52,8 @@ cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Softcams ) |::★●●————
 ★★★ oscam ★★★
-★★★ new oscam ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/2install.sh -O - | /bin/sh
-★★★ Linuxsat25 ★★★
+★★★ oscam Linuxsat25 ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 ★★★ Ncam ★★★
 wget https://raw.githubusercontent.com/biko-73/Ncam_EMU/main/installer.sh -O - | /bin/sh
