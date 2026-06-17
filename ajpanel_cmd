@@ -157,6 +157,8 @@ wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin
 wget -qO- https://raw.githubusercontent.com/anow2008/anow-panel/main/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Skins ) |::★●●————
+★★★ skin-nacht 7.0 ★★★
+wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin/main/skin.sh | bash
 ★★★ Fury-FHD ★★★ 
 wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
 ★★★ premiumfhd-blue ★★★
