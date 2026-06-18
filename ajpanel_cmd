@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/OpenAT
 ★★★ openpli ★★★
 wget https://raw.githubusercontent.com/anow2008/Downloading-settings/main/openpli/install.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| (  astra-sm ) |::★●●————
+————●●★::| ( astra-sm ) |::★●●————
 opkg update
 opkg install astra-sm
 ★★★ تحميل الملف فى امر واحد ★★★
@@ -21,7 +21,7 @@ wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/as
 ★★★ openpli  تحميل الملف فى امر واحد صورة  ★★★
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.lua -O /etc/astra/astra-sm.lua && chmod 755 /etc/astra/astra-sm.lua && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/astra-sm.conf -O /etc/astra/astra-sm.conf && chmod 755 /etc/astra/astra-sm.conf && wget --no-check-certificate https://raw.githubusercontent.com/anow2008/astra/refs/heads/main/etc/sysctl.conf -O /etc/sysctl.conf && chmod 644 /etc/sysctl.conf && sysctl -p
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| (   astra.conf **abertis ) |::★●●————
+————●●★::| ( astra.conf **abertis ) |::★●●————
 1 تحميل ملف abertis
 wget -O /etc/astra/scripts/abertis https://raw.githubusercontent.com/anow2008/astra/main/scripts/abertis && chmod 755 /etc/astra/scripts/abertis
 1. أمر تحميل ملف astra.conf
@@ -68,7 +68,7 @@ wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow200
 ★★★ cccam ★★★
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/cccam/main/install.sh | tr -d '\r' | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
-————●●★::| (  Plugins ) |::★●●————
+————●●★::| ( Plugins ) |::★●●————
 ★★★ epgimport ★★★  
 opkg update && opkg install enigma2-plugin-extensions-epgimport
 ★★★ Cacheflush ★★★
@@ -140,7 +140,7 @@ wget "https://gitlab.com/eliesat/extensions/-/raw/main/hasbahca/hasbahca.sh" -O 
 ★★★ Vavoo ★★★
 wget https://raw.githubusercontent.com/eliesatpanelgrid/oe2.0/main/addons/vavoo/vavoo.sh -qO - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
-————●●★::| (  PANELS ) |::★●●————
+————●●★::| ( PANELS ) |::★●●————
 ★★★ AJPanel ★★★
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 ★★★ SmartAddonspanel ★★★
