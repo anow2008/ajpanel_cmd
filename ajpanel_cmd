@@ -80,7 +80,7 @@ wget -q "--no-check-certificate" https://github.com/popking159/SubsSupportPro/ra
 ★★★ AISubtitles ★★★
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
 ★★★ Mytranslator ★★★
-wget "https://gitlab.com/eliesat/extensions/-/raw/main/mytranslator/mytranslator.sh" -qO - | /bin/sh
+wget -O /tmp/mytranslator.ipk "https://github.com/ismailelkhooly/Ismail-/raw/refs/heads/main/enigma2-plugin-extensions-mytranslator_1.72.ipk" && opkg install --force-reinstall /tmp/mytranslator.ipk && rm -f /tmp/mytranslator.ipk
 ★★★ Mytranslator anow ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/my-translator/main/mytranslator.sh | sh
 ★★★ subssupport-1.5.8-r9 ★★★
