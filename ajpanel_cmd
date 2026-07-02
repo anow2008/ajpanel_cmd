@@ -75,7 +75,7 @@ opkg update && opkg install enigma2-plugin-extensions-epgimport
 opkg update && opkg install enigma2-plugin-extensions-cacheflush
 ★★★ ArabicSavior ★★★  
 wget https://raw.githubusercontent.com/fairbird/ArabicSavior/main/installer.sh -O - | /bin/sh
-★★★ SubsSupportPro v1.0.0 ★★★
+★★★ SubsSupportPro ★★★
 wget -q "--no-check-certificate" https://github.com/popking159/SubsSupportPro/raw/main/subssupportpro-install.sh -O - | /bin/sh
 ★★★ AISubtitles ★★★
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
