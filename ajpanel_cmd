@@ -164,6 +164,10 @@ wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/inst
 ★★★ premiumfhd-blue ★★★
 wget "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh" -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
+————●●★::| ( fix ) |::★●●————
+★★★ FFmpeg ★★★
+opkg remove ffmpeg --force-depends && opkg update && opkg install ffmpeg
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 ————●●★::| ( remove ) |::★●●————
 ★★★ remove-config-file ★★★ 
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-config-file.sh | sh
