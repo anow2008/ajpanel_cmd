@@ -145,15 +145,11 @@ wget https://raw.githubusercontent.com/eliesatpanelgrid/oe2.0/main/addons/vavoo/
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -O - | /bin/sh
 ★★★ SmartAddonspanel ★★★
 wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/SmartAddonspanel/smart-Panel.sh -O - | /bin/sh
-★★★ EmilPanelPro ★★★
-wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/main/EmilPanelPro/emilpanelpro.sh -O - | /bin/sh
 ★★★ CiefpPanel ★★★
 wget https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
 ★★★ EliesatPanel ★★★
 wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
-★★★ Epanel ★★★
-wget https://dreambox4u.com/emilnabil237/plugins/epanel/installer.sh -O - | /bin/sh
-★★★ anow ★★★
+★★★ anowPanel ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/anow-panel/main/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Skins ) |::★●●————
