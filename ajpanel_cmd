@@ -159,6 +159,8 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin
 wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
 ★★★ premiumfhd-blue ★★★
 wget "https://gitlab.com/eliesat/skins/-/raw/main/all/premium-fhd/premiumfhd-blue.sh" -O - | /bin/sh
+★★★ Luka-FHD ★★★
+wget -q --no-check-certificate https://raw.githubusercontent.com/popking159/skins/refs/heads/main/lukaatv/installer.sh -O - | /bin/sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●● 
 ————●●★::| ( fix ) |::★●●————
 ★★★ FFmpeg ★★★
