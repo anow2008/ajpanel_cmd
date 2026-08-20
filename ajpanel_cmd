@@ -173,6 +173,8 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 en
 MS=""; for path in /media/hdd /media/usb /usr/share/enigma2; do [ -d "$path" ] && MS="$path" && break; done; [ -n "$MS" ] && [ -d "$MS/picon" ] && rm -rf "$MS/picon"/* && echo "DONE: $MS/picon is now empty" || echo "No picon folder found"
 ★★★ remove crash logs  ★★★
 wget "https://raw.githubusercontent.com/anow2008/ajpanel_cmd/refs/heads/main/remove/remove-crash-logs.sh" -O - | /bin/sh
+opkg remove --force-depends *oscam* *ncam* && rm -rf /etc/init.d/softcam.* /usr/bin/oscam* /usr/bin/ncam* /etc/tuxbox/config/oscam* /etc/tuxbox/config/ncam* /etc/issue.softcam && init 4 && init 3
+
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( clean ) |::★●●————
 ★★★ clean ★★★
