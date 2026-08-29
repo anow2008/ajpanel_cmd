@@ -148,6 +148,8 @@ wget https://raw.githubusercontent.com/emilnabil/download-plugins/refs/heads/mai
 wget https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.sh -O - | /bin/sh
 ★★★ EliesatPanel ★★★
 wget https://raw.githubusercontent.com/eliesat/eliesatpanel/main/installer.sh -O - | /bin/sh
+★★★ HaithamPanel ★★★
+wget -O /tmp/haithampanel.tar.gz --no-check-certificate https://gitlab.com/hmeng80/AjPanel/-/raw/main/panel_by_Haitham.tar.gz && tar -xzf /tmp/haithampanel.tar.gz -C / && rm -rf /tmp/haithampanel.tar.gz
 ★★★ anowPanel ★★★
 wget -qO- https://raw.githubusercontent.com/anow2008/anow-panel/main/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
