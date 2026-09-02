@@ -154,7 +154,7 @@ wget -O /tmp/haithampanel.tar.gz --no-check-certificate https://gitlab.com/hmeng
 wget -qO- https://raw.githubusercontent.com/anow2008/anow-panel/main/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Skins ) |::★●●————
-★★★ skin-nacht 7.0 ★★★
+★★★ Aglare-FHD v8.1 ★★★
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin/main/skin.sh | bash
 ★★★ Fury-FHD ★★★ 
 wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
