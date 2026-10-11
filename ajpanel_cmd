@@ -126,7 +126,7 @@ wget https://raw.githubusercontent.com/ciefp/CiefpsettingsPanel/main/installer.s
 wget -qO- https://raw.githubusercontent.com/anow2008/anow-panel/main/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Skins ) |::★●●————
-★★★ Aglare-FHD v8.1 ★★★
+★★★ Aglare-FHD v8.5 ★★★
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin/main/skin.sh | bash
 ★★★ premiumfhd-blue ★★★
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin/main/skins1.sh | bash
