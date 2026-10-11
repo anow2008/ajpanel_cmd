@@ -127,9 +127,11 @@ wget -qO- https://raw.githubusercontent.com/anow2008/anow-panel/main/install.sh 
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Skins ) |::★●●————
 ★★★ Aglare-FHD v8.5 ★★★
-wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin/main/skin.sh | bash
+wget -q --no-check-certificate -O - https://raw.githubusercontent.com/anow2008/skin/refs/heads/main/skin.sh | sh
 ★★★ premiumfhd-blue ★★★
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/skin/main/skins1.sh | bash
+★★★ Aglare-FHD pli_7.2 ★★★
+wget -q --no-check-certificate -O - https://raw.githubusercontent.com/anow2008/skin/refs/heads/main/skin2.sh | sh
 ★★★ Fury-FHD ★★★ 
 wget https://raw.githubusercontent.com/islam-2412/IPKS/refs/heads/main/fury/installer.sh -O - | /bin/sh
 ★★★ Luka-FHD ★★★
