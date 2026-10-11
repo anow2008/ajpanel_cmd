@@ -51,7 +51,7 @@ cd /media/hdd/picon && wget -qO- "https://github.com/anow2008/picons/releases/do
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Softcams ) |::★●●————
 ★★★ oscam levi45 ★★★
-wget -q "--no-check-certificate" "https://gitlab.com/hmeng80/softcams/-/raw/main/levi/oscam.sh?ref_type=heads" -O - | /bin/sh
+wget --no-check-certificate -qO - https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/2install.sh | /bin/sh
 ★★★ Oscam-11.726-by-lenuxsat ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
 ★★★ Ncam ★★★
