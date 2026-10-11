@@ -97,7 +97,7 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/Se
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Subtitles Plugins ) |::★●●————
 ★★★ SubsSupportPro ★★★
-wget -q "--no-check-certificate" https://github.com/popking159/SubsSupportPro/raw/main/subssupportpro-install.sh -O - | /bin/sh
+wget -qO - https://raw.githubusercontent.com/popking159/SubsSupportPro/refs/heads/main/myinstaller.sh | /bin/sh
 ★★★ AISubtitles ★★★
 wget https://github.com/milanello13/aisubtitles/releases/download/v2.0/enigma2-plugin-extensions-aisubtitles_v2.0_all.ipk
 ★★★ Mytranslator 1.75 ★★★
