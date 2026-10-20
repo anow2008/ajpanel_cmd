@@ -34,13 +34,12 @@ done
 
 sleep 3
 
-m -rf /etc/ncam* > /dev/null 2>&1
+rm -rf /etc/ncam* > /dev/null 2>&1
 rm -rf /usr/camscript/Ncam* > /dev/null 2>&1
 rm -rf /usr/script/*cam.sh > /dev/null 2>&1
 rm -rf /usr/script/*em.sh > /dev/null 2>&1
 rm -rf /usr/camscript/*cam.sh > /dev/null 2>&1
 rm -rf /usr/emu_scripts/EGcam* > /dev/null 2>&1
-rm -rf /etc/init.d/softcam* > /dev/null 2>&1
 rm -rf /usr/emu/start/*emu > /dev/null 2>&1
 rm -rf /usr/emuscript/*em.sh > /dev/null 2>&1
 rm -rf /usr/LTCAM/*ncam.sh > /dev/null 2>&1
@@ -64,6 +63,14 @@ rm -rf /etc/cam.d/*NCam.sh > /dev/null 2>&1
 
 sleep 3
 
+# حل مشكلة خطأ 127 عبر إنشاء ملف وهمي قبل الحذف
+if [ ! -f /etc/init.d/softcam.oscam ]; then
+    touch /etc/init.d/softcam.oscam
+    chmod +x /etc/init.d/softcam.oscam
+fi
+
+rm -rf /etc/init.d/softcam* > /dev/null 2>&1
+
 opkg remove --force-depends enigma2-plugin-softcams-gosatplusv2-oscam > /dev/null 2>&1
 opkg remove --force-depends enigma2-plugin-softcams-oscam > /dev/null 2>&1
 opkg remove --force-depends enigma2-plugin-softcams-oscamicam > /dev/null 2>&1
@@ -77,7 +84,7 @@ opkg remove --force-depends enigma2-plugin-softcams-gosatplusv2-ncam > /dev/null
 opkg remove --force-depends enigma2-plugin-softcams-gosatplus2 > /dev/null 2>&1
 opkg remove --force-depends enigma2-plugin-softcams-powercam > /dev/null 2>&1
 opkg remove --force-depends enigma2-plugin-softcams-revcamv2 > /dev/null 2>&1
-opkg remove --force-depends enigma2-softcams-cccam-images > /dev/null 2>&1
+opkg remove --force-softcams-cccam-images > /dev/null 2>&1
 opkg remove --force-depends enigma2-softcams-cccam > /dev/null 2>&1
 opkg remove --force-depends enigma2-plugin-softcams-oscamicamnew > /dev/null 2>&1
 opkg remove --force-depends enigma2-plugin-softcams-oscam-emu-levi45 > /dev/null 2>&1
