@@ -63,6 +63,10 @@ wget -O /etc/tuxbox/config/SoftCam.Key https://raw.githubusercontent.com/anow200
 ★★★ cccam ★★★
 wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/cccam/main/install.sh | tr -d '\r' | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+————●●★::| ( EPGImport ) |::★●●————
+★★★ EPGImport anow ★★★
+
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Plugins ) |::★●●————
 ★★★ epgimport ★★★  
 opkg update && opkg install enigma2-plugin-extensions-epgimport
