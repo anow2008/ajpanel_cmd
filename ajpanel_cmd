@@ -40,6 +40,7 @@ wget --no-check-certificate -O /tmp/22channels.tar.gz https://raw.githubusercont
 ————●●★::| ( picons ) |::★●●————
 ★★★ openpicons ★★★
 wget --no-check-certificate -L -O /tmp/picons.tar.xz "https://openpicons.com/?file=full-motor-utf8snp/hardlink/utf8snp-full.400x240-400x240.light.on.transparent_2026-10-25--00-12-17.hardlink.tar.xz" && mkdir -p /media/hdd/picon && tar -xJf /tmp/picons.tar.xz -C /media/hdd/picon/ --strip-components=1 && rm /tmp/picons.tar.xz★★★ picons eliesat ★★★
+★★★ picons eliesat ★★★
 wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
 ★★★ picons anow ★★★
 cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz | tar xz --strip-components=2 picon-picon-main/picon
