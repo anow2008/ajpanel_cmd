@@ -46,6 +46,7 @@ wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
 cd /media/hdd/picon && wget -qO- https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz | tar xz --strip-components=2 picon-picon-main/picon
 ★★★ picons anow 2222 ★★★
 wget --no-check-certificate -L -O /tmp/picon.tar.gz "https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz" && mkdir -p /tmp/picon_extract && tar -xzf /tmp/picon.tar.gz -C /tmp/picon_extract && mkdir -p /media/hdd/picon && cp -rf /tmp/picon_extract/*/picon/* /media/hdd/picon/ && rm -rf /tmp/picon.tar.gz /tmp/picon_extract●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Softcams ) |::★●●————
 ★★★ Oscam-11.726-by-lenuxsat ★★★
 wget https://raw.githubusercontent.com/anow2008/cam-emu/main/oscam/installer.sh -O - | /bin/sh
