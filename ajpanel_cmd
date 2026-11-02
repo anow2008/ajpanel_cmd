@@ -65,6 +65,8 @@ wget -qO- --no-check-certificate https://raw.githubusercontent.com/anow2008/ccca
 ————●●★::| ( EPGImport ) |::★●●————
 ★★★ EPGImport anow ★★★
 wget -O /etc/epgimport/arabic.sources.xml https://raw.githubusercontent.com/anow2008/EPGImport-Sources-egypt/main/arabic.sources.xml && wget -O /etc/epgimport/arabic.channels.xml https://raw.githubusercontent.com/anow2008/EPGImport-Sources-egypt/main/arabic.channels.xml && ls -l /etc/epgimport/arabic.*
+★★★ EPG-Gold ★★★
+wget -q --no-check-certificate -O - https://raw.githubusercontent.com/anow2008/EPG-Gold/main/install.sh | sh
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Plugins ) |::★●●————
 ★★★ epgimport ★★★  
@@ -153,6 +155,8 @@ wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/rem
 wget -qO- https://raw.githubusercontent.com/anow2008/ajpanel_cmd/main/remove/remove-emus.sh | sh
 ★★★ remove BissPro-Smart ★★★ 
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/BissPro-Smart && killall -9 enigma2
+★★★ remove EPG-Gold ★★★
+wget -q --no-check-certificate -O /tmp/i.sh https://raw.githubusercontent.com/anow2008/EPG-Gold/main/install.sh && sh /tmp/i.sh remove
 ★★★ remove all picons  ★★★
 MS=""; for path in /media/hdd /media/usb /usr/share/enigma2; do [ -d "$path" ] && MS="$path" && break; done; [ -n "$MS" ] && [ -d "$MS/picon" ] && rm -rf "$MS/picon"/* && echo "DONE: $MS/picon is now empty" || echo "No picon folder found"
 ★★★ remove crash logs  ★★★
