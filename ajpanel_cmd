@@ -95,6 +95,8 @@ wget --no-check-certificate -O - https://raw.githubusercontent.com/Ahmadarjan1/I
 wget "https://gitlab.com/eliesat/extensions/-/raw/main/ip2sat/ip2sat.sh" -O - | /bin/sh
 ★★★ ServerColor  ★★★
 wget -q "--no-check-certificate" https://raw.githubusercontent.com/islam-2412/ServerColoring/refs/heads/main/fury/installer.sh -O - | /bin/sh
+★★★ cacheflush-pro_2.0 ★★★
+wget --no-check-certificate -O /tmp/cacheflush-pro.ipk "https://raw.githubusercontent.com/ismailelkhooly/Ismail-/main/enigma2-plugin-extensions-cacheflush-pro_2.0_all.ipk" && opkg install --force-overwrite /tmp/cacheflush-pro.ipk && rm -f /tmp/cacheflush-pro.ipk
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Subtitles Plugins ) |::★●●————
 ★★★ EPGTranslator ★★★
