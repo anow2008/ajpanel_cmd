@@ -45,6 +45,8 @@ wget --no-check-certificate -L -O /tmp/picons.tar.xz "https://openpicons.com/?fi
 wget -qO- "https://gitlab.com/eliesat/picons/-/raw/main/archive.sh" | sh
 ★★★ picons anow ★★★
 wget --no-check-certificate -L -O /tmp/picon.tar.gz "https://github.com/anow2008/picon-picon/archive/refs/heads/main.tar.gz" && mkdir -p /tmp/picon_extract && tar -xzf /tmp/picon.tar.gz -C /tmp/picon_extract && mkdir -p /media/hdd/picon && for f in /tmp/picon_extract/*/picon/*; do [ -f "$f" ] && rm -f "/media/hdd/picon/$(basename "$f")"; done && cp -rf /tmp/picon_extract/*/picon/* /media/hdd/picon/ && rm -rf /tmp/picon.tar.gz /tmp/picon_extract
+★★★ picons KhaledAli ★★★
+wget --no-check-certificate -L -O /tmp/picon.tar.gz "https://github.com/KhaledAli65/picon/archive/refs/heads/main.tar.gz" && mkdir -p /tmp/picon_extract && tar -xzf /tmp/picon.tar.gz -C /tmp/picon_extract && mkdir -p /media/hdd/picon && for f in /tmp/picon_extract/*/picon/*; do [ -f "$f" ] && rm -f "/media/hdd/picon/$(basename "$f")"; done && cp -rf /tmp/picon_extract/*/picon/* /media/hdd/picon/ && rm -rf /tmp/picon.tar.gz /tmp/picon_extract
 ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●
 ————●●★::| ( Softcams ) |::★●●————
 ★★★ Oscam-11.726-by-lenuxsat ★★★
